@@ -1,0 +1,37 @@
+<MessageScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        md_bg_color: app.theme_cls.bg_normal
+        MDToolbar:
+            id: logoToolBar
+            height: 100
+            title: "Yt Video Downloader"
+            font_size: '100sp'
+            right_action_items: [['dots-vertical', lambda x:x]]
+            margin: 0
+        ScrollView:
+            do_scroll_y: True
+            effect_cls: 'ScrollEffect'
+            bar_width: 0
+            MDBoxLayout:
+                adaptive_height: True
+                orientation: 'vertical'
+                md_bg_color: app.theme_cls.primary_color
+                spacing: 20
+                MDBoxLayout:
+                    height:30
+                    size_hint_y: None
+                MDBoxLayout:
+                    orientation:'vertical'
+                    md_bg_color: app.theme_cls.bg_normal
+                    size_hint_y: None
+                    radius:[20,20,0,0]
+                    padding:[0,0,0,40]
+#                    MDTextField:
+#                            hint_text: "Url"
+#                            mode: 'rectangle'
+#                            max_text_length: 50
+#                            helper_text: "Url"
+#                            margin: 0
+#                        ScrollView:
+#                            do_scroll_y: True
